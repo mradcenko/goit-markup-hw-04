@@ -1,0 +1,537 @@
+:root {
+  /* fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  /* text colors */
+  --main-text-cl: #212121;
+  --accent-txt-cl: #2196f3;
+  --btn-txt-cl: #ffffff;
+  --contacts-txt-cl: #757575;
+
+  /* bg colors */
+  --light-bg-cl: #ffffff;
+  --dark-bg-cl: #2f303a;
+  --gray-bg-cl: #f5f4fa;
+
+  /* others */
+  --indent: 30px;
+  --items: 3;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-text-cl);
+}
+
+/* reset styles */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  outline: 0;
+  outline-offset: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* CARD SET */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+/* base styles */
+.btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--btn-txt-cl);
+  background-color: #188ce8;
+}
+
+.btn-mode-light {
+  color: var(--main-text-cl);
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.btn-mode-dark {
+  color: var(--btn-txt-cl);
+  background: var(--accent-txt-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  padding: 9px, 31px;
+  border-radius: 4px;
+}
+
+/* 5 btn */
+.btn-item {
+  background: var(--gray-bg-cl);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
+
+/* Header section  вверх студия портф контакт*/
+.header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--main-text-cl);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.header-link:hover,
+.header-link:focus,
+.contacts-link:hover,
+.contacts-link:focus,
+.contacts-link.link:hover,
+.contacts-link-current:hover {
+  color: var(--accent-txt-cl);
+}
+
+/* подсветка студии и портфолио голубым */
+.header-link-current {
+  color: var(--accent-txt-cl);
+}
+
+.contacts-address {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+/* тел. и мыло вверх  */
+.contacts-link.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--contacts-txt-cl);
+}
+
+/* тел. и мыло низ */
+.contacts-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+/* @mail адрес г.киев */
+.contacts-link-current {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+/* Hero section главная надпись*/
+.main-title {
+  margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--btn-txt-cl);
+  text-align: center;
+}
+
+/* задний фон гл надписи */
+.hero {
+  background-color: var(--dark-bg-cl);
+  text-align: center;
+  padding: 200px 0;
+}
+
+/* About section главные слова 4 гр и картинки портф*/
+
+.section-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-cl);
+}
+
+.section-subtitle.list {
+  margin-bottom: 4px;
+}
+
+/* главные слова 4 гр студия*/
+.section-subtitle.accent {
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* фио */
+.section-subtitle.link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--main-text-cl);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* текст серый в 4 гр студия */
+.about-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contacts-txt-cl);
+}
+
+/* about */
+
+.about-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-item {
+  width: 270px;
+}
+
+.container-about {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+}
+
+.container-work {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container-team {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container-footer {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container-portfolio {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 94px;
+}
+
+/* заголовки студия чем занимаемся наша команда */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.work-img {
+  display: block;
+}
+
+.team-img {
+  display: block;
+}
+
+.portfolio-img {
+  display: block;
+}
+
+.work-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Portfolio section  серый тест под заголовками картинок*/
+
+.portfolio-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--contacts-txt-cl);
+  text-decoration: none;
+}
+
+/* блок фото люди */
+.team-wrapper {
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid rgb(214, 214, 214);
+  border-top: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 0px;
+}
+
+/* блок фото карточки */
+.portfolio-wrapper {
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid rgb(214, 214, 214);
+  border-top: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 0px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+  
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+.team-link {
+  text-decoration: none;
+  text-align: center;
+}
+
+.portfolio-link {
+  text-decoration: none;
+}
+
+/* команда  */
+.team-list {
+  display: flex;
+  gap: var(--indent);
+}
+
+/* серй текст под ребятами */
+.team-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--contacts-txt-cl);
+  text-decoration: none;
+  text-align: center;
+}
+
+.team {
+  background-color: var(--gray-bg-cl);
+}
+
+/* Footer section */
+.footer {
+  background-color: var(--dark-bg-cl);
+}
+
+.ul {
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.logo-link {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+.logo-accent {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+  color: var(--main-text-cl);
+}
+
+.logo-link.link {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--accent-txt-cl);
+}
+
+/* Page header */
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.flex-nav {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-item {
+  display: block;
+  margin-right: 50px;
+  gap: 9px;
+}
+
+.contacts-item.inf {
+  width: 1200px;
+  padding-inline-start: 0px;
+  padding-inline-end: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-hero {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* верх студ портф конт */
+.header-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-item {
+  margin-right: 50px;
+}
+
+.header-item:last-child {
+  margin-right: 0px;
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+/* .contacts-item + .contacts-item { margin:0} */
+
+.contacts-item:last-child {
+  margin-right: 0px;
+}
+
+.work-btn-list {
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 94px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
