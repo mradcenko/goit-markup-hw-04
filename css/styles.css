@@ -341,11 +341,6 @@ p {
   text-decoration: none;
 }
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* команда  */
 .team-list {
   display: flex;
@@ -423,7 +418,6 @@ p {
 .contacts-item {
   display: block;
   margin-right: 50px;
-  margin-bottom: 9px;
 }
 
 .contacts-item.inf {
