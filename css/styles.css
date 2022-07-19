@@ -94,6 +94,10 @@ p {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .btn:hover,
@@ -269,54 +273,6 @@ p {
   width: 270px;
 }
 
-.container-about {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 94px;
-}
-
-.container-work {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.container-team {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.container-footer {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.container-portfolio {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 94px;
-}
-
 /* заголовки студия чем занимаемся наша команда */
 .section-title {
   font-weight: 700;
@@ -325,18 +281,6 @@ p {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   text-align: center;
-}
-
-.work-img {
-  display: block;
-}
-
-.team-img {
-  display: block;
-}
-
-.portfolio-img {
-  display: block;
 }
 
 .work-list {
@@ -370,21 +314,18 @@ p {
 
 /* блок фото карточки */
 .portfolio-wrapper {
-  border-radius: 0px 0px 4px 4px;
   border: 1px solid rgb(214, 214, 214);
   border-top: none;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  margin-bottom: 0px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
-  
 }
 
 .portfolio-item {
@@ -398,6 +339,11 @@ p {
 
 .portfolio-link {
   text-decoration: none;
+}
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* команда  */
@@ -424,6 +370,8 @@ p {
 /* Footer section */
 .footer {
   background-color: var(--dark-bg-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .ul {
@@ -442,6 +390,7 @@ p {
   color: #ffffff;
   text-decoration: none;
 }
+
 .logo-accent {
   font-family: Raleway;
   font-weight: 400;
@@ -474,7 +423,7 @@ p {
 .contacts-item {
   display: block;
   margin-right: 50px;
-  gap: 9px;
+  margin-bottom: 9px;
 }
 
 .contacts-item.inf {
@@ -493,10 +442,13 @@ p {
   margin-right: auto;
 }
 
-.container-hero {
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work {
+  padding-top: 0;
 }
 
 /* верх студ портф конт */
@@ -522,6 +474,7 @@ p {
 
 .contacts-item:last-child {
   margin-right: 0px;
+  margin-bottom: 0px;
 }
 
 .work-btn-list {
@@ -529,9 +482,4 @@ p {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  margin-top: 94px;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 6px;
-  padding-bottom: 6px;
 }
